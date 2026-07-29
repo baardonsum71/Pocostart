@@ -1,0 +1,10 @@
+{
+  "buildCommand": "mkdir -p .vercel-out && cp -R website/. .vercel-out/",
+  "outputDirectory": ".vercel-out",
+  "headers": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [{ "key": "Content-Type", "value": "application/json" }]
+    }
+  ]
+}

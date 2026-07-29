@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "RK7WNK33A8.com.pocostart.app",
+        "paths": ["/auth/*", "/auth/callback", "/confirm*"]
+      }
+    ]
+  }
+}

@@ -36,8 +36,11 @@ type LocaleState = {
 
 function detectDeviceLocale(): LocaleCode {
   try {
-    const raw =
-      Intl.DateTimeFormat().resolvedOptions().locale?.slice(0, 2).toLowerCase() ?? 'en';
+    const full =
+      Intl.DateTimeFormat().resolvedOptions().locale?.toLowerCase() ?? 'en';
+    // Filipino often reports as fil-* or tl-* (Tagalog); "fi" alone is Finnish
+    if (full.startsWith('fil') || full.startsWith('tl')) return 'fil';
+    const raw = full.slice(0, 2);
     if (raw === 'nb' || raw === 'nn') return 'no';
     if (isLocaleCode(raw)) return raw;
   } catch {

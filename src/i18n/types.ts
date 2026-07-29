@@ -9,7 +9,11 @@ export type LocaleCode =
   | 'nl'
   | 'sv'
   | 'da'
-  | 'pl';
+  | 'pl'
+  | 'id'
+  | 'vi'
+  | 'th'
+  | 'fil';
 
 export type TranslationTree = {
   common: {
@@ -49,6 +53,11 @@ export type TranslationTree = {
     signInFailed: string;
     appleFailed: string;
     languageLabel: string;
+    checkEmailTitle: string;
+    checkEmailBody: string;
+    confirmingEmail: string;
+    confirmSuccess: string;
+    confirmFailed: string;
   };
   tabs: {
     home: string;
@@ -143,6 +152,9 @@ export type TranslationTree = {
     continue: string;
     missingProduct: string;
     missingProductBody: string;
+    purchaseFailed: string;
+    restoreNone: string;
+    restoreNoneBody: string;
     devMode: string;
     devModeBody: string;
     savings: string;

@@ -10,9 +10,18 @@ import nl from './locales/nl';
 import sv from './locales/sv';
 import da from './locales/da';
 import pl from './locales/pl';
+import id from './locales/id';
+import vi from './locales/vi';
+import th from './locales/th';
+import fil from './locales/fil';
 
 export const LOCALE_OPTIONS: LocaleOption[] = [
   { code: 'en', nativeName: 'English', englishName: 'English', flag: '🇬🇧' },
+  // Asian markets first after English — same picker chips as everyone else
+  { code: 'id', nativeName: 'Bahasa Indonesia', englishName: 'Indonesian', flag: '🇮🇩' },
+  { code: 'vi', nativeName: 'Tiếng Việt', englishName: 'Vietnamese', flag: '🇻🇳' },
+  { code: 'th', nativeName: 'ไทย', englishName: 'Thai', flag: '🇹🇭' },
+  { code: 'fil', nativeName: 'Filipino', englishName: 'Filipino', flag: '🇵🇭' },
   { code: 'no', nativeName: 'Norsk', englishName: 'Norwegian', flag: '🇳🇴' },
   { code: 'es', nativeName: 'Español', englishName: 'Spanish', flag: '🇪🇸' },
   { code: 'de', nativeName: 'Deutsch', englishName: 'German', flag: '🇩🇪' },
@@ -37,6 +46,10 @@ export const catalogs: Record<LocaleCode, TranslationTree> = {
   sv,
   da,
   pl,
+  id,
+  vi,
+  th,
+  fil,
 };
 
 export function isLocaleCode(value: string): value is LocaleCode {

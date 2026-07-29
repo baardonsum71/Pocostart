@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>poco start — Spanish for beginners</title>
+    <meta
+      name="description"
+      content="Learn Spanish fast. poco start is built for beginners — available worldwide with the app in your language."
+    />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Source+Sans+3:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --yellow: #ffd000;
+        --orange: #ff8a00;
+        --red: #e53935;
+        --navy: #1a2744;
+        --cream: #fff8f0;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Source Sans 3", system-ui, sans-serif;
+        color: var(--navy);
+        background:
+          radial-gradient(1200px 600px at 10% -10%, #ffe566 0%, transparent 55%),
+          radial-gradient(900px 500px at 100% 0%, #ffb347 0%, transparent 50%),
+          var(--cream);
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+      .brand {
+        font-family: Nunito, sans-serif;
+        font-weight: 900;
+        font-size: clamp(42px, 8vw, 72px);
+        letter-spacing: -0.04em;
+        margin: 0;
+        line-height: 1;
+      }
+      .hero {
+        display: grid;
+        gap: 28px;
+        align-items: center;
+        margin-top: 48px;
+      }
+      @media (min-width: 800px) {
+        .hero { grid-template-columns: 1.2fr 0.8fr; }
+      }
+      .tagline {
+        font-size: 1.25rem;
+        font-weight: 600;
+        max-width: 34ch;
+        line-height: 1.45;
+        margin: 12px 0 0;
+      }
+      .cta {
+        display: inline-flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border-radius: 16px;
+        font-weight: 800;
+        text-decoration: none;
+        color: white;
+        background: var(--red);
+      }
+      a.btn.secondary {
+        background: white;
+        color: var(--navy);
+        border: 1.5px solid #d4c0a8;
+      }
+      .card {
+        background: white;
+        border: 1px solid #e8d9c8;
+        border-radius: 28px;
+        padding: 24px;
+        box-shadow: 0 20px 50px rgba(26, 39, 68, 0.08);
+      }
+      .price {
+        font-family: Nunito, sans-serif;
+        font-weight: 900;
+        font-size: 1.6rem;
+      }
+      .langs {
+        margin-top: 56px;
+        display: grid;
+        gap: 10px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        background: white;
+        border: 1px solid #e8d9c8;
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-weight: 700;
+        font-size: 0.95rem;
+      }
+      footer {
+        margin-top: 64px;
+        color: #5c6b85;
+        font-size: 0.95rem;
+      }
+      footer a { color: var(--navy); font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p style="font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#e53935;margin:0">
+        pocostart.com
+      </p>
+      <div class="hero">
+        <div>
+          <h1 class="brand">poco start</h1>
+          <p class="tagline">
+            Spanish for beginners. Pick your language when you sign up — learn Spanish while the app speaks yours.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#download">Get the app</a>
+            <a class="btn secondary" href="mailto:hello@pocostart.com">hello@pocostart.com</a>
+          </div>
+        </div>
+        <div class="card">
+          <p class="price">49 NOK / month</p>
+          <p style="margin:4px 0 16px;font-weight:700">or 399 NOK / year</p>
+          <p style="margin:0;line-height:1.5;font-weight:600;color:#5c6b85">
+            Two free lessons. Full A1 path with practice, streaks, and App Store / Play billing via RevenueCat.
+          </p>
+        </div>
+      </div>
+
+      <section class="langs">
+        <h2 style="font-family:Nunito,sans-serif;font-weight:900;margin:0">App languages</h2>
+        <p style="margin:0;color:#5c6b85;font-weight:600">
+          Choose your interface language at signup. Spanish is what you learn.
+        </p>
+        <div class="chips">
+          <span class="chip">🇬🇧 English</span>
+          <span class="chip">🇳🇴 Norsk</span>
+          <span class="chip">🇪🇸 Español</span>
+          <span class="chip">🇩🇪 Deutsch</span>
+          <span class="chip">🇫🇷 Français</span>
+          <span class="chip">🇵🇹 Português</span>
+          <span class="chip">🇮🇹 Italiano</span>
+          <span class="chip">🇳🇱 Nederlands</span>
+          <span class="chip">🇸🇪 Svenska</span>
+          <span class="chip">🇩🇰 Dansk</span>
+          <span class="chip">🇵🇱 Polski</span>
+        </div>
+      </section>
+
+      <section id="download" style="margin-top:56px">
+        <h2 style="font-family:Nunito,sans-serif;font-weight:900">Download</h2>
+        <p style="color:#5c6b85;font-weight:600;max-width:50ch">
+          Coming soon on the App Store and Google Play. Point DNS for <strong>pocostart.com</strong> to this site when you deploy it.
+        </p>
+      </section>
+
+      <footer>
+        <p>© poco start · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
